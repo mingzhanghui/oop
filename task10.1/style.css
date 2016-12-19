@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+table {
+	border-collapse: collapse;
+	width: 60%;
+	margin: 10px auto;
+	border: 1px solid #ccc;
+}
+
+thead {
+	background-color: #d8e0f0;
+}
+
+table th,td {
+	padding: 2px 4px;
+	text-align: center;
+}
+
+table tr:hover {
+	background-color: #c5e8d2;
+}
+
+.thick-bottom {
+	border-bottom: 4px solid #4f4e47;
+}
+.alt-bg {
+	background-color: #cdefdb;
+}
+
+a#toTop {
+	display: inline;
+	text-decoration: none;
+	position: fixed;
+	bottom: .75rem;
+	right: .75rem;
+	overflow: hidden;
+	width: 43px;
+	height: 43px;
+	border: none;
+	z-index: 100;
+}
+
+#toTopHover {
+	display: block;
+	overflow: hidden;
+	float: left;
+}
+
+/* 显示分页区域 */
+#page {
+	height: 40px;
+	padding: 20px 0;
+	margin: 0 17%;
+	position: absolute;
+	min-width: 500px;
+}
+
+#page p {
+	float: left;
+	padding: 2px 12px;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	color: #bbb;
+	border: 1px solid #ccc;
+	background: #fcfcfc;
+	margin-right: 8px;
+}
+
+#page p.page-remark {
+	border-style: none;
+	background: none;
+	margin: 0 10px;
+	padding: 4px 0;
+	color: #666;
+	font-size: 14px;
+}
+#page p.page-remark b {
+	color: red;
+}
+#page a {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	padding: 2px 12px;
+	height: 24px;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 24px;
+	background: #fff;
+	color: #555;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+#page a.cur {   /* 当前页 */
+	border: none;
+	background: #077ee3;
+	color: #fff;
+}
+#page span {
+	color: #555;
+	float: left;
+}
+#page input {
+	width: 60px;
+	height: 28px;
+	line-height: 28px;
+}
+#page button {
+	padding: 4px;
+}
+.page-ellipsis {    /* 分页 1 2 ... n */
+
+}

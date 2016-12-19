@@ -1,0 +1,737 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none outside;
+}
+
+input, textarea, select {
+    font-size: 15px;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+input {
+    border: 1px solid #ccc;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-image: initial;
+}
+
+li {
+    display: inline-block;
+    float: left;
+    text-align: -webkit-match-parent;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+th {
+    font-weight: normal;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.top-info-wrap {
+    line-height: 50px;
+    float: right;
+    margin-top: -20px;
+}
+
+.top-info-wrap ul.top-info-list {
+    float: right;
+    margin: 0 20px 0 0;
+    font-size: 16px;
+}
+
+.top-info-list li a {
+    float: left;
+    display: inline;
+    zoom: 1;
+    padding: 0 20px;
+}
+.top-info-list li a:hover {
+    color: yellow;
+    background-color: #b6b6b6;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    padding: 10px 0;
+    overflow: auto;
+    border-radius: 5px;
+    color: #111;
+    font-family: "微软雅黑";
+    background-color: #ececec;
+}
+.container .col-sub {
+    position: absolute;
+    width: 190px;
+    background: #f5f5f5;
+    top: 0px;
+}
+
+.sub-head {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: #dedede;
+}
+
+.panel-title {
+    float: left;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 24px;
+    color: #000;
+}
+
+.panel-link {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    line-height: 20px;
+}
+
+.panel-link a {
+    float: left;
+    padding: 2px;
+}
+.panel-link a:hover {
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: #2b91e3;
+    outline: none;
+    cursor: pointer;
+}
+
+.panel-link a .ctico-add {
+    background-position: -126px -5px;
+}
+
+.panel-link a .ct-icon {
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin: 3px 5px 3px 0;
+}
+
+.ct-icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 8px;
+    margin: 0 2px;
+    overflow: hidden;
+    background-image: url("../imgs/icon_contact_new.png");
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.contact-group {
+    width: 190px;
+    position: relative;
+    top: 16px;
+    bottom: 40px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.contact-group dl {
+    font-size: 14px;
+    list-style: none;
+    display: block;
+}
+
+.contact-group dt {
+    border-bottom: 1px solid #eeeff0;
+}
+
+.contact-group dt a {
+    color: #666666;
+    display: block;
+    line-height: 30px;
+    padding: 0 10px 0 30px;
+    position: relative;
+    zoom: 1;
+    font-size: 16px;
+}
+.contact-group dt a .ct-icon {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: -5px;
+}
+
+.contact-group dd {
+}
+
+.contact-group dl a {
+    color: #1a1a1a;
+}
+
+.contact-group dd .item {
+    border-radius: 2px;
+    position: relative;
+}
+
+.contact-group dd .name {
+    display: block;
+    line-height: 38px;
+    padding: 0 40px;
+    zoom: 1;
+}
+
+.contact-list li .f-*,
+.contact-group dd .name,
+.contact-group dd .num {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact-group dd .num {
+    color: #666;
+    line-height: 38px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    max-width: 50px;
+}
+.item a {
+    width: 100%;
+    margin-left: -20px;
+}
+.item.focus a.name,
+.item.focus a.btn-icon,
+.item.focus a.name:hover,
+.item.focus a.btn-icon:hover {
+    color: white;
+    background: #2b91e3;
+}
+.item:hover {
+    background-color: #eaecee;
+}
+.contact-group dd .btn-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    display: inline-block;
+}
+.contact-group dd .item:hover .bt-icon,
+.contact-group dd .hover .btn-icon {
+    display: block;
+}
+
+.contact-group dd .edit {
+    right: 29px;
+}
+
+.item.focus a .ctico-edit {
+    background-position: -24px -96px;
+}
+.item.focus:hover a .ctico-edit {
+    background-position: -24px -48px;
+}
+.item.focus:hover a:hover .ctio-edit {
+    background-position: -24px -48px;
+}
+.item:hover a:hover .ctico-edit {
+    background-position: -24px -24px;
+}
+.item.focus:hover a:hover .ctico-edit {
+    background-position: -24px -48px;
+}
+.item:hover a .ctico-edit {
+    background-position: -24px -0px;
+}
+.ctico-edit {
+    background-position: -24px -96px;
+}
+
+i,em {
+    font-style: normal;
+}
+
+.contact-group dd .btn-icon span {
+    display: none;
+}
+
+.contact-group dd .del {
+    right: 5px;
+}
+
+.item.focus a .ctico-clean {
+    background-position: -96px -96px;
+}
+.item a .ctico-clean {
+    background-position: -96px -96px;
+}
+.item:hover a .ctico-clean {
+    background-position: -96px 0px;
+}
+
+.item.focus:hover a .ctico-clean {
+    background-position: -96px -48px;
+}
+
+.item a:hover .ctico-clean {
+    background-position: -96px -24px;
+}
+.ctico-clean {
+    background-position: -96px 0;
+}
+.col-main {
+    background: #ececec;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 191px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #ccc;
+}
+.main-headline {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    background: #dedede;
+}
+.main-headline:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: #f5f5f5;
+}
+
+.top-search {
+    line-height: 30px;
+    width: 150px;
+    position: relative;
+}
+
+.main-headline .top-search {
+    float: right;
+    margin: 0 0 0 20px;
+    background-color: #cdefdb;
+}
+
+.top-search input {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    color: #333;
+    font-size: 14px;
+    width: 88px;
+    height: 20px;
+    line-height: 20px;
+    padding: 4px 30px 4px 30px;
+}
+
+.cticon-search {
+    background-position: -72px 0;
+}
+
+.main-headline .operate-btn {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.main-headline .hd-btn {
+    color: #2b91e3;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    float: left;
+    position: relative;
+    padding: 0 10px;
+    margin-right: 32px;
+    margin-top: -2px;
+}
+.main-headline a.hd-btn:hover {
+    background-color: #fafafa;
+}
+.main-headline .hd-btn i {
+    line-height: 32px;
+    margin-top: 3px;
+    margin-left: -4px;
+}
+.cticon-del {
+    background-position: -48px -72px;
+}
+.cticon-edit {
+    background-position: -24px -72px;
+}
+
+.hd-btn .cticon-add {
+    background-position: -120px -72px;
+}
+
+.list-container {
+    background: #fafafa;
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 43px;
+    left: 0;
+}
+
+.contact-list table.result-tab {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-top: 1px solid #c4c9df;
+}
+.contact-list table.result-tab thead {
+    background-color: #f2f2f2;
+}
+.contact-list table.result-tab tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/*.result-tab tr:nth-child(odd) {*/
+    /*background: #fafafa;*/
+/*}*/
+
+.result-tab tr {
+    line-height: 36px;
+}
+
+.result-tab {
+    border: 1px solid #ccc;
+}
+
+.result-tab th.tc, .result-tab td.tc {
+    text-align: center;
+}
+
+.result-tab th, .result-tab td {
+    padding: 4px;
+    border: 1px dotted #ddd;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.result-tab th {
+    font-weight: normal;
+    font-size: 14px;
+    border-right: 1px solid #ccc;
+}
+
+td.tc {
+    text-align: center;
+}
+table.result-tab tbody {
+    color: #333;
+}
+
+table.result-tab tbody tr:hover {
+    background-color: #d3ecfd;
+}
+
+.main-headline .btn-link {
+    float: left;
+    margin-right: 20px;
+    margin-top: -10px;
+}
+
+.main-headline .btn-link .ico-back {
+    margin-top: 10px;
+}
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 10;
+    overflow: hidden;
+    background-image: url("../imgs/icon_contact.png");
+    background-repeat: no-repeat;
+}
+
+.btn-link .icon {
+    position: relative;
+    top: 7px;
+    float: left;
+    margin-right: 5px;
+}
+
+.ico-back {
+    background-position: -160px 0;
+}
+
+.btn-link span {
+    float: left;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border-radius: 3px;
+    background: #2b91e3;
+    cursor: pointer;
+}
+
+.main-headline .button {
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    margin: 0 10px;
+    color: #2b91e3;
+    border: 1px solid #ccc;
+    background: #fdfdfd;
+    font-size: 15px;
+}
+
+a.gray-button {
+    color: #666;
+    border: 1px solid #cfcfcf;
+    background: none;
+}
+.main-container {
+    background: #fdfdfd;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.contact-add {
+    padding: 10px 0;
+}
+.user-profile {
+    padding: 0 30px 20px 30px;
+    color: #555;
+}
+.user-name {
+    margin: 10px 10px 10px 0px;
+    position: relative;
+}
+
+.user-remark {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+label {
+    line-height: 1.7;
+    width: 60px;
+    display: inline-block;
+    color: #666;
+    top: 5px;
+}
+.require-red {
+    color: #f60;
+    font-family: serif;
+    margin-left: -8px;
+}
+
+.user-profile label {
+    top: 5px;
+}
+
+.user-profile .user-remark textarea {
+    color: #555;
+    width: 470px;
+    height: 80px;
+    vertical-align: top;
+    padding: 2px;
+}
+
+.user-profile input {
+    height: 36px;
+    width: 180px;
+}
+
+.contact-add p.title {
+    border-bottom: 1px dotted #d5d5d5;
+    color: #666;
+    line-height: 34px;
+    padding: 0 10px;
+}
+
+.contact-form {
+    padding: 20px 30px;
+    width: 610px;
+}
+div.contact-form div {
+    margin-bottom: 10px;
+}
+div.contact-form input.text {
+    width: 240px;
+    height: 36px;
+    padding: 4px;
+}
+
+div.contact-form input[type=radio] {
+    width: 16px;
+    height: 16px;
+    margin: 2px 10px;
+}
+div.user-profile label {
+    margin: 0px 4px;
+}
+div.contact-form label {
+    margin: 0px 8px;
+}
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+tr.selected {
+    background-color: #cee7f9 !important;
+}
+tr:nth-child(2n) {
+    background-color: #ffffff;
+}
+tr:nth-child(2n+1) {
+    background-color: #eff0f1;
+}
+/*tr.even {*/
+    /*background-color: #ffffff;*/
+/*}*/
+/*tr.odd {*/
+    /*background-color: #eff0f1;*/
+/*}*/
+
+.pagination {
+    position: absolute;
+    top: 496px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* 分页样式ＢＥＧＩＮ */
+#page {
+    height: 40px;
+    padding: 20px 0;
+    margin: 0 auto;
+    position: relative;
+    min-width: 500px;
+}
+
+#page p {
+    float: left;
+    padding: 2px 12px;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    color: #bbb;
+    border: 1px solid #ccc;
+    background: #fcfcfc;
+    margin-right: 8px;
+}
+
+#page p.page-remark {
+    border-style: none;
+    background: none;
+    margin: 0 10px;
+    padding: 4px 0;
+    color: #666;
+    font-size: 14px;
+}
+#page p.page-remark b {
+    color: red;
+}
+#page a {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    padding: 2px 12px;
+    height: 24px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    background: #fff;
+    color: #555;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#page a.cur {   /* 当前页 */
+    border: none;
+    background: #077ee3;
+    color: #fff;
+}
+#page span {
+    color: #555;
+    float: left;
+}
+#page input {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+}
+#page button {
+    padding: 4px;
+}
+.page-ellipsis {    /* 分页 1 2 ... n */
+
+}
+/*　分页样式ＥＮＤ　*/
+
+/*　edit.php 移动分组　*/
+.operate-btn .move-group-title {
+    color: #555;
+    line-height: 32px;
+}
+.operate-btn .move-group-title select {
+    border: solid 1px #333;
+    font-size: 14px;
+    padding: 3px;
+}
+/* index.php 批量分组 */
+#js-bulk-group {
+    display: inline-block;
+    margin-top: -20px;
+}
+#js-bulk-group select {
+    border: solid 1px #2b91e3;
+    padding: 2px 0;
+}
+#js-confirm-group {
+    padding: 4px 8px;
+    line-height: 20px;
+    position: relative;
+    align-items: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#js-confirm-group:hover {
+    background-color: #fff;
+}
